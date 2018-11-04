@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+   		android:baselineAligned="false"
+        android:orientation="horizontal" >
+ 
+        <LinearLayout
+            android:id="@+id/main_first_contents_layout"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/main_first_header_layout_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_first_header_layout_bgcolor" >
+
+                <ImageView
+                    android:id="@+id/header_logo_img"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:contentDescription="@string/img_desc"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_main_logo" />
+                
+                <TextView
+                    android:id ="@+id/category_button"
+                    android:clickable="true"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@id/header_logo_img"
+					android:paddingTop="10dip"
+			        android:paddingRight="10dip"
+                	android:gravity="right"
+                    android:text="@string/category_move_button"
+                    android:textColor="@color/selector_textcolor"
+			        android:textSize="@dimen/main_header_allmenu_text_size" />
+
+                <kr.ac.mju.mjuapp.common.VerticalTextView
+                    android:id="@+id/weather_divider1"
+                    style="@style/verticalTextStyle"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@id/header_logo_img"
+                    android:layout_below="@id/header_logo_img"
+                    android:background="@color/notice_item_devider" />
+
+                <TextView
+                    android:id="@+id/weather_seoul_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/header_logo_img"
+                    android:layout_toRightOf="@id/weather_divider1"
+                    android:text="@string/main_weather_seoul_title"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_title_size" />
+
+                <TextView
+                    android:id="@+id/weather_seoul_campus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/weather_seoul_title"
+                    android:layout_below="@id/weather_seoul_title"
+                    android:text="@string/main_weather_seoul_campus"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_campus_text_size" />
+
+                <TextView
+                    android:id="@+id/weather_seoul_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/weather_seoul_title"
+                    android:layout_toRightOf="@id/weather_seoul_title"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_degree_title_size" />
+
+                <TextView
+                    android:id="@+id/weather_seoul_degree_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/weather_seoul_degree"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/weather_seoul_degree"
+                    android:text="@string/weather_degree_symbol"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_degree_title_size" />
+
+                <TextView
+                    android:id="@+id/weather_seoul_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/weather_seoul_campus"
+                    android:layout_alignRight="@id/weather_seoul_degree"
+                    android:layout_below="@id/weather_seoul_degree"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_campus_text_size" />
+
+                <kr.ac.mju.mjuapp.common.VerticalTextView
+                    android:id="@+id/weather_divider2"
+                    style="@style/verticalTextStyle"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/header_logo_img"
+                    android:layout_toRightOf="@id/weather_seoul_degree_symbol"
+                    android:background="@color/notice_item_devider" />
+
+                <TextView
+                    android:id="@+id/weather_yongin_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/weather_seoul_title"
+                    android:layout_toRightOf="@id/weather_divider2"
+                    android:text="@string/main_weather_yongin_title"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_title_size" />
+
+                <TextView
+                    android:id="@+id/weather_yongin_campus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/weather_yongin_title"
+                    android:layout_below="@id/weather_yongin_title"
+                    android:text="@string/main_weather_yongin_campus"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_campus_text_size" />
+
+                <TextView
+                    android:id="@+id/weather_yongin_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/weather_yongin_title"
+                    android:layout_toRightOf="@id/weather_yongin_title"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_degree_title_size" />
+
+                <TextView
+                    android:id="@+id/weather_yongin_degree_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/weather_yongin_degree"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/weather_yongin_degree"
+                    android:text="@string/weather_degree_symbol"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_degree_title_size" />
+
+                <TextView
+                    android:id="@+id/weather_yongin_contents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/weather_yongin_campus"
+                    android:layout_alignRight="@id/weather_yongin_degree"
+                    android:layout_below="@id/weather_yongin_degree"
+                    android:textColor="@color/main_first_header_layout_textview_color2"
+                    android:textSize="@dimen/weather_seoul_campus_text_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/main_first_quick_layout_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_first_login_layout_bgcolor"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/quick_menu_myiweb_btn_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/btn_quickmenu_myiweb"
+                        android:layout_width="1dip"
+                        android:layout_height="1dip"
+                        android:background="@drawable/btn_main_myiweb_selector"
+                        android:contentDescription="@string/img_desc"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/quickmenu_myiweb_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quick_menu_myiweb"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/main_myiweb_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quick_menu_library_btn_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/btn_quickmenu_library"
+                        android:layout_width="1dip"
+                        android:layout_height="1dip"
+                        android:background="@drawable/btn_main_library_selector"
+                        android:contentDescription="@string/img_desc"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/quickmenu_library_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quick_menu_library"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/main_myiweb_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quick_menu_phone_btn_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/btn_quickmenu_phone"
+                        android:layout_width="1dip"
+                        android:layout_height="1dip"
+                        android:background="@drawable/btn_main_phone_selector"
+                        android:contentDescription="@string/img_desc"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/quickmenu_phone_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quick_menu_phone"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/main_myiweb_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quick_menu_food_btn_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/btn_quickmenu_food"
+                        android:layout_width="1dip"
+                        android:layout_height="1dip"
+                        android:background="@drawable/btn_main_food_selector"
+                        android:contentDescription="@string/img_desc"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/quickmenu_food_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quick_menu_food"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/main_myiweb_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_first_notice_layout_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_first_header_layout_bgcolor" >
+
+                <TextView
+                    android:id="@+id/main_notice_notice_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_notice_textview_selector"
+                    android:padding="5dip"
+                    android:text="@string/main_notice_notice"
+                    android:textColor="@color/notice_navi_showed_tv_color2"
+                    android:textSize="@dimen/main_notice_navi_text_size_selected" />
+
+                <TextView
+                    android:id="@+id/main_notice_ceremony_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/main_notice_notice_tv"
+                    android:layout_toRightOf="@id/main_notice_notice_tv"
+                    android:background="@drawable/main_notice_textview_selector"
+                    android:padding="5dip"
+                    android:text="@string/main_notice_ceremony"
+                    android:textColor="@color/notice_navi_not_showed_tv_color2"
+                    android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+                <TextView
+                    android:id="@+id/main_notice_school_affairs_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/main_notice_notice_tv"
+                    android:layout_toRightOf="@id/main_notice_ceremony_tv"
+                    android:background="@drawable/main_notice_textview_selector"
+                    android:padding="5dip"
+                    android:text="@string/main_notice_school_affairs"
+                    android:textColor="@color/notice_navi_not_showed_tv_color2"
+                    android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+                <TextView
+                    android:id="@+id/main_notice_schalorship_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/main_notice_notice_tv"
+                    android:layout_toRightOf="@id/main_notice_school_affairs_tv"
+                    android:background="@drawable/main_notice_textview_selector"
+                    android:padding="5dip"
+                    android:text="@string/main_notice_schalorship"
+                    android:textColor="@color/notice_navi_not_showed_tv_color2"
+                    android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+                <TextView
+                    android:id="@+id/main_notice_career_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/main_notice_notice_tv"
+                    android:layout_toRightOf="@id/main_notice_schalorship_tv"
+                    android:background="@drawable/main_notice_textview_selector"
+                    android:padding="5dip"
+                    android:text="@string/main_notice_career"
+                    android:textColor="@color/notice_navi_not_showed_tv_color2"
+                    android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+                <TextView
+                    android:id="@+id/main_notice_text4_underline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/main_notice_notice_tv"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="100dip"
+                    android:background="@color/notice_item_devider" />
+
+                <TextView
+                    android:id="@+id/main_notice_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/main_notice_text4_underline"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/main_notice_textview_selector"
+                    android:lines="1"
+                    android:padding="3dip"
+                    android:textColor="@color/notice_contents_tv_color2"
+                    android:textSize="@dimen/main_notice_text_size" />
+
+                <TextView
+                    android:id="@+id/main_notice_text3_underline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_above="@id/main_notice_text4"
+                    android:layout_alignLeft="@id/main_notice_notice_tv"
+                    android:background="@color/notice_item_devider" />
+
+                <TextView
+                    android:id="@+id/main_notice_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/main_notice_text3_underline"
+                    android:layout_alignLeft="@id/main_notice_text4"
+                    android:background="@drawable/main_notice_textview_selector"
+                    android:lines="1"
+                    android:padding="3dip"
+                    android:textColor="@color/notice_contents_tv_color2"
+                    android:textSize="@dimen/main_notice_text_size" />
+
+                <TextView
+                    android:id="@+id/main_notice_text2_underline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_above="@id/main_notice_text3"
+                    android:layout_alignLeft="@id/main_notice_notice_tv"
+                    android:background="@color/notice_item_devider" />
+
+                <TextView
+                    android:id="@+id/main_notice_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/main_notice_text2_underline"
+                    android:layout_alignLeft="@id/main_notice_text4"
+                    android:background="@drawable/main_notice_textview_selector"
+                    android:lines="1"
+                    android:padding="3dip"
+                    android:textColor="@color/notice_contents_tv_color2"
+                    android:textSize="@dimen/main_notice_text_size" />
+
+                <TextView
+                    android:id="@+id/main_notice_text1_underline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_above="@id/main_notice_text2"
+                    android:layout_alignLeft="@id/main_notice_notice_tv"
+                    android:background="@color/notice_item_devider" />
+
+                <TextView
+                    android:id="@+id/main_notice_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/main_notice_text1_underline"
+                    android:layout_alignLeft="@id/main_notice_text4"
+                    android:background="@drawable/main_notice_textview_selector"
+                    android:lines="1"
+                    android:padding="3dip"
+                    android:textColor="@color/notice_contents_tv_color2"
+                    android:textSize="@dimen/main_notice_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_first_picture_layout_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <kr.ac.mju.mjuapp.common.CustomViewPager
+                    android:id="@+id/main_picture_viewPager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+                
+                <View
+                    android:id="@+id/main_picture_viewPager_filter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="false"
+                    android:background="#7f000000" />
+                
+                <TextView
+                    android:id="@+id/main_picture_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_picture_title_size" />
+
+                <TextView
+                    android:id="@+id/main_picture_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/main_picture_title"
+                    android:layout_below="@id/main_picture_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_picture_date_size" />
+
+                <TextView
+                    android:id="@+id/main_picture_writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/main_picture_title"
+                    android:layout_below="@id/main_picture_date"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_picture_date_size" />
+
+                <LinearLayout
+                    android:id="@+id/picture_viewpager_marker_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dip"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_first_banner_layout_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <kr.ac.mju.mjuapp.common.CustomViewPager
+                    android:id="@+id/main_banner_viewPager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+                
+                <View
+                    android:id="@+id/main_banner_viewPager_filter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="false" 
+                    android:background="#7f000000" />
+
+                <TextView
+                    android:id="@+id/main_banner_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_picture_title_size" />
+
+                <TextView
+                    android:id="@+id/main_banner_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/main_banner_title"
+                    android:layout_below="@id/main_banner_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_picture_date_size" />
+
+                <TextView
+                    android:id="@+id/main_banner_writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/main_banner_title"
+                    android:layout_below="@id/main_banner_date"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_picture_date_size"
+                    android:visibility="invisible" />
+                
+                
+                <LinearLayout
+                    android:id="@+id/banner_viewpager_marker_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dip"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+  <!--       <View
+            android:id="@+id/main_fisrt_edge_view"
+            android:layout_width="1px" 
+            android:layout_height="fill_parent"
+            android:background="@color/first_layout_edge_color" />--> 
+
+<!--         <View
+            android:id="@+id/main_fisrt_shadow_view"
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/second_layout_shadow" />--> 
+    </LinearLayout>
+
+    <View
+        android:id="@+id/main_first_invisible_view"
+        android:layout_width="380dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true" />
+
+</RelativeLayout>

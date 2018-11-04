@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/introduce_sub_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="90dip"
+        android:background="#2C323F"
+        android:fadingEdge="none"
+        android:padding="10dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/menu_introduce_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/menu_introduce"
+                android:textSize="@dimen/side_menu_title" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/introduce_president_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/president_message"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/introduce_foundation_spirit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/foundation_spirit"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/introduce_symbol"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/symbol"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/introduce_symbol_animal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/symbol_animal"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/introduce_school_song"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/school_song"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/introduce_cheering_song"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/cheering_song"
+                android:textSize="@dimen/side_menu_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/introduce_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/bg_header_color" >
+
+            <ImageButton
+                android:id="@+id/introduce_sliding_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_sliding" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/introduce_header_icon"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_header_introduce"
+                    android:contentDescription="@string/img_desc" />
+
+                <TextView
+                    android:id="@+id/introduce_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/introduce_header_icon"
+                    android:gravity="center"
+                    android:text="@string/menu_introduce"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_notice_navi_text_size_selected" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <WebView
+                android:id="@+id/introduce_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dip"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/introduce_left_slidingbar"
+                android:layout_width="90dip"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

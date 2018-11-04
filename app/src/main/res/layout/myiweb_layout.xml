@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/myiweb_sub_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="90dip"
+        android:background="#2C323F"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/myiweb_submene_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/myiweb_sub_menu_title"
+                android:textSize="@dimen/side_menu_title" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/myiweb_timetable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/myiweb_sub_menu_timetable"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/myiweb_credits"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/myiweb_sub_menu_credit"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/myiweb_credits_to_graduation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/myiweb_sub_menu_check_grade"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <!--
+        	모바일 웹 미준비로 인해서 주석처리 
+            <TextView 
+                android:id="@+id/myiweb_student_card"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dip"
+                android:text="@string/myiweb_sub_menu_check_student_card"
+                android:textSize="20sp" />
+            
+             <TextView 
+                android:id="@+id/myiweb_check_scholar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dip"
+                android:text="@string/myiweb_sub_menu_check_scholar"
+                android:textSize="20sp" />
+             
+              <TextView 
+                android:id="@+id/myiweb_check_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dip"
+                android:text="@string/myiweb_sub_menu_check_register"
+                android:textSize="20sp" />
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/myiweb_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/bg_header_color" >
+
+            <ImageButton
+                android:id="@+id/myiweb_sliding_btn"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_sliding" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/myiweb_header_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/icon_header_myiweb"
+                    android:contentDescription="@string/img_desc" />
+
+                <TextView
+                    android:id="@+id/myiweb_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/myiweb_header_icon"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_notice_navi_text_size_selected" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <WebView
+                android:id="@+id/myiweb_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dip"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/myiweb_left_slidingbar"
+                android:layout_width="90dip"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

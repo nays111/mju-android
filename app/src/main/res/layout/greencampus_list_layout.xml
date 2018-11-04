@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/bg_header_color"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/green_list_header_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/icon_header_greencampus"
+                android:contentDescription="@string/img_desc" />
+
+            <TextView
+                android:id="@+id/green_main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/green_list_header_icon"
+                android:background="@color/bg_header_color"
+                android:gravity="center"
+                android:text="@string/green_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/main_notice_navi_text_size_selected"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/green_list_search_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/green_list_write_btn"
+            android:background="@drawable/btn_base_selector"
+            android:contentDescription="@string/img_desc"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_search" />
+
+        <ImageButton
+            android:id="@id/green_list_write_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_base_selector"
+            android:contentDescription="@string/img_desc"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_write" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/green_list_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginRight="2dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:paddingLeft="10dip"
+        android:paddingRight="3dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+
+    <TextView
+        android:id="@+id/green_list_more"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/list_more_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="@string/text_list_load_more_btn"
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+</LinearLayout>

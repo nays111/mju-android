@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_photosns_desc"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_header_color"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/photosns_write_header_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/icon_header_photosns" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/photosns_write_header_icon"
+            android:gravity="center"
+            android:text="Photo SNS"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="3dip"
+        android:paddingTop="10dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/photosns_write_preview"
+                android:layout_width="190.06dip"
+                android:layout_height="150.84dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10.43dip"
+                android:background="@drawable/bg_photosns_preview"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/photosns_write_edittext"
+                android:layout_width="275.37dip"
+                android:layout_height="28.81dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_photosns_input"
+                android:hint="사진과 함께 남길 추억을 적어 주세요"
+                android:maxLength="20"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+            <!-- </LinearLayout> -->
+
+            <LinearLayout
+                android:id="@+id/photosns_write_btn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.05dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/photosns_write_file_choose_btn"
+                    android:layout_width="131.99dp"
+                    android:layout_height="30.15dp"
+                    android:layout_marginRight="10.05dp"
+                    android:background="@drawable/btn_selector"
+                    android:drawableLeft="@drawable/icon_file_choose"
+                    android:paddingLeft="10dp"
+                    android:text="사진 선택"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/photosns_write_submit_btn"
+                    android:layout_width="131.99dp"
+                    android:layout_height="30.15dp"
+                    android:background="@drawable/btn_selector"
+                    android:drawableLeft="@drawable/icon_file_submit"
+                    android:paddingLeft="10dp"
+                    android:text="등록 하기"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

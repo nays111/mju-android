@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/traffic_sub_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="90dip"
+        android:background="#2C323F"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/traffic_submenu_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/menu_traffic"
+                android:textSize="@dimen/side_menu_title" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <!-- 인문 -->
+
+            <TextView
+                android:id="@+id/traffic_submenu_humanity_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/humanity"
+                android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/traffic_liberalarts_shuttlebus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/schoolbus"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/traffic_liberalarts_urbanbus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/urbanbusbus"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/traffic_liberalarts_subway"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/subway"
+                android:textSize="@dimen/side_menu_text_size" />
+            <!-- 자연 -->
+
+            <TextView
+                android:id="@+id/traffic_submenu_science_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/science"
+                android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/traffic_science_schoolbus_gotoschool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/schoolbus_to_school"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/traffic_science_schoolbus_walkhome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/schoolbus_to_home"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/traffic_science_shuttle_semester_weekday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/schoolbus_semester_weekday"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/traffic_science_shuttle_semester_weekend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/schoolbus_semester_weekend"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/traffic_science_shuttle_vacation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/schoolbus_vacation"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/traffic_between_liberalarts_and_science_gotoschool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/humanity_and_science_to_school"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/traffic_between_liberalarts_and_science_walkhome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/humanity_and_science_to_home"
+                android:textSize="@dimen/side_menu_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/traffic_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/bg_header_color" >
+
+            <ImageButton
+                android:id="@+id/traffic_sliding_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_sliding" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/traffic_header_icon"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_header_traffic"
+                    android:contentDescription="@string/img_desc" />
+
+                <TextView
+                    android:id="@+id/traffic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/traffic_header_icon"
+                    android:gravity="center"
+                    android:text="@string/menu_traffic"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_notice_navi_text_size_selected" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <WebView
+                android:id="@+id/traffic_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dip"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/traffic_left_slidingbar"
+                android:layout_width="90dip"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

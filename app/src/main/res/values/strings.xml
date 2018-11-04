@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">명지대학교</string>
+    <string name="action_settings">Settings</string>
+    <string name="mju_home_page_url">http://www.mju.ac.kr</string>
+
+    <string name="select_campus">캠퍼스 선택</string>
+    <string-array name="seoul_yongin_campus_array">
+        <item>인문 캠퍼스</item>
+        <item>자연 캠퍼스</item>
+    </string-array>
+
+    <!-- image contentDescription -->
+    <string name="img_desc">img</string>
+
+    <!-- 메뉴 -->
+    <string name="menu_title">Category</string>
+    <string name="menu_section1_title">Guide</string>
+    <string name="menu_food">식단안내</string>
+    <string name="menu_library">도서관</string>
+    <string name="menu_campusmap">캠퍼스맵</string>
+    <string name="menu_traffic">교통안내</string>
+    <string name="menu_entrance">입학안내</string>
+    <string name="menu_phone">전화안내</string>
+    <string name="menu_section2_title">Community</string>
+    <string name="menu_community">커뮤니티</string>
+    <string name="menu_notice">공지사항</string>
+    <string name="menu_section3_title">ETC</string>
+    <string name="menu_qna">통합민원</string>
+    <string name="menu_introduce">학교소개</string>
+    <string name="menu_energy">에너지절약나눔</string>
+    <string name="menu_timetable">시간표</string>
+
+    <!-- 앱 & 개발자 정보 -->
+    <string name="app_version">Ver 2.53</string>
+    <string name="developer_info_title">개발자 정보</string>
+    <string name="developer_info_department1">명지대학교 전산정보원</string>
+    <string name="developer_info_department2">어플리케이션 개발 클럽 (MDC)</string>
+    <string name="developer_info_hello1">꾸준한 노력과 개선으로 좀 더 편리한</string>
+    <string name="developer_info_hello2">어플리케이션을 만들도록 하겠습니다</string>
+    <string name="feedback">버그 및 피드백 보내기</string>
+    <string name="developer_info_hello3">따뜻한 관심에 감사드립니다</string>
+
+    <!-- 메인 액티비티 공지 사항 -->
+    <string name="main_notice_notice">공지</string>
+    <string name="main_notice_ceremony">행사</string>
+    <string name="main_notice_school_affairs">학사</string>
+    <string name="main_notice_schalorship">장학</string>
+    <string name="main_notice_career">경력</string>
+
+    <!-- pref -->
+    <string name="pref_name">mjuapp_pref</string>
+    <string name="pref_key_user_id">user_id</string>
+    <string name="pref_key_auto_login">auto_login</string>
+    <string name="pref_key_save_user_id">save_user_id</string>
+    <string name="pref_key_user_pw">user_pw</string>
+    <string name="pref_std_name">std_name</string>
+    <string name="pref_app_notice_show_again">app_notice_show_again</string>
+    <string name="pref_photo_notice_show_again">photo_notice_show_again</string>
+
+    <!-- login -->
+    <string name="html_param_login_main_user_id">userID</string>
+    <string name="html_param_login_main_user_pw">userPW</string>
+    <string name="html_param_login_mobile_user_id">userId</string>
+    <string name="html_param_login_mobile_user_pw">userPw</string>
+    <string name="text_login">로그인</string>
+    <string name="text_id">아이디</string>
+    <string name="text_passwd">비밀번호</string>
+    <string name="text_autologin">자동 로그인</string>
+    <string name="text_save_user_id">아이디 저장</string>
+    <string name="url_login_main">https://sso.mju.ac.kr/swift/login/loginCheck.jsp</string>
+    <string name="url_login_mobile">https://m.mju.ac.kr/mbs/mjumob/jsp/login/login_mobile.jsp</string>
+    <string name="url_login_myiweb">https://sso.mju.ac.kr/swift/login/login_myiweb.jsp</string>
+    <string name="url_cookie_main">sso.mju.ac.kr</string>
+    <string name="url_cookie_mobile_01">m.mju.ac.kr</string>
+    <string name="url_cookie_mobile_02">.mju.ac.kr</string>
+    <string name="url_cookie_myiweb">myiweb.mju.ac.kr</string>
+    <string name="html_login_success_myiweb">popup_sso_success.jsp</string>
+    <string name="html_login_success_main">/SSO/ssoLinkService?RSP=www.mju.ac.kr</string>
+    <string name="html_login_success_mobile">/mbs/mjumob/index.jsp</string>
+    <string name="html_login_success_main_pwchange">/swift/login/login_pwchange.jsp?RSP=www.mju.ac.kr</string>
+    <string name="url_home_mypage">http://www.mju.ac.kr/mbs/mjukr/jsp/mypage/mypageMyinfo.jsp?id=mjukr_100100000000</string>
+    <string name="msg_login_id_insufficient">아이디를 입력하세요</string>
+    <string name="msg_login_pw_insufficient">패스워드를 입력하세요</string>
+    <string name="msg_login_fail">입력하신 정보가 올바르지 않습니다</string>
+
+    <!-- common message -->
+    <string name="msg_network_error_weak_signal">네트워크 상태가 불안정합니다\n정상적인 서비스를 위해 다시 시도해주십시요</string>
+    <string name="msg_network_error_not_connection">정상적인 서비스를 이용하기 위해선 네트워크 연결이 필요합니다. 네트워크 연결을 확인해주세요</string>
+    <string name="msg_login_alert">로그인 후 사용가능합니다</string>
+    <string name="msg_no_list">등록된 게시물이 없습니다</string>
+    <string name="msg_search_bar_hint">검색어를 입력하세요</string>
+    <string name="title_search">검색 결과</string>
+    <string name="write_success">글 등록에 성공하였습니다.</string>
+    <string name="write_fail">글 등록에 실패하였습니다.</string>
+    <string name="getting_page_info_fail">페이지 정보를 얻는데 실패했습니다.\n다시 시도해 주세요.</string>
+    <string name="getting_info_fail">정보를 가져오는데 실패했습니다.\n다시 시도해 주십시오</string>
+    <string name="file_size_10m">파일 크기는 10M를 넘을 수 없습니다.</string>
+    <string name="del_picture">사진 삭제</string>
+    <string name="check">확인</string>
+    <string name="cancel">취소</string>
+    <string name="no_offer_write_function">현 게시판에서는 쓰기 기능을 지원하지 않습니다.</string>
+    <string name="board_write_url">https://www.mju.ac.kr/board/boardWriteExecute.mbs</string>
+    <string name="not_available_storage">저장장치를 이용할 수 없습니다.</string>
+
+    <!-- url -->
+    <string name="url_phone">http://m.mju.ac.kr/mbs/mjumob2/subview.jsp?id=mjumob_060000000000</string>
+    <string name="url_library">http://m.lib.mju.ac.kr/index.ax</string>
+
+    <!-- myiweb -->
+    <string name="myiweb_sub_menu_title">MyIweb</string>
+    <string name="myiweb_sub_menu_timetable">시간표확인</string>
+    <string name="myiweb_sub_menu_credit">성적확인</string>
+    <string name="myiweb_sub_menu_check_grade">졸업학점확인</string>
+
+    <!-- notice submenu text -->
+    <string name="notice_sidemenu_title">공지사항</string>
+    <string name="notice_sidemenu_general">일반공지</string>
+    <string name="notice_sidemenu_event">행사공지</string>
+    <string name="notice_sidemenu_grade">성적/수강공지</string>
+    <string name="notice_sidemenu_bachelor">기타학사공지</string>
+    <string name="notice_sidemenu_scholarship">장학/학자금공지</string>
+    <string name="notice_sidemenu_job">경력/취업공지</string>
+    <string name="notice_sidemenu_bid">입찰공지</string>
+
+    <!-- 그린 캠퍼스 -->
+    <string name="green_write_complaint_prompt">민원 분류</string>
+    <string name="green_write_content_hint">우리대학내 불필요한 전등,전열 등의 시설물이 켜져있으면 현장의 사진과 함께 글을 올려주세요. 담당자가 속히 조치해 드리며 추후 포상의 기회가 주어집니다.\n\n사진을 선택 후 목록에서 사진 파일 이름을 선택하면 목록에서 삭제할 수 있습니다.\n</string>
+    <string name="msg_load_more_last">마지막 페이지입니다</string>
+    <string name="text_list_load_more_btn">Load more..</string>
+    <string name="msg_green_write_file_delete_content">사진 목록에서 삭제하시겠습니까?</string>
+    <string name="msg_green_write_upload_limit">사진 업로드 개수는 3개로 제한됩니다</string>
+
+    <!-- 공지사항 -->
+    <string name="msg_download_fail">다운로드 실패</string>
+    <string name="msg_download_progress">다운로드 중입니다</string>
+    <string name="msg_implement_fail_download_file">해당파일을 실항할 수 있는 어플리케이션이 없습니다</string>
+    <string name="uri_file_save_directory">/mjudownload/</string>
+
+    <!-- 입학 어플리케이션 url & package name -->
+    <string name="url_entrance_app_pkg_name">com.kr.mncapro.mju</string>
+    <string name="url_entrance_app_market">market://details?id=com.kr.mncapro.mju</string>
+
+    <!-- 도서관 어플리케이션 url & package name -->
+    <string name="url_library_app_pkg_name">mjlib://kr.ac.mjlib.library</string>
+    <string name="url_library_app_market">market://details?id=kr.ac.mjlib.library</string>
+
+    <!-- complaint submenu text -->
+    <string name="complaint_sidemenu_title">통합민원센터</string>
+    <string name="complaint_sidemenu_chapel">채플</string>
+    <string name="complaint_sidemenu_scholarship">장학/학자금대출</string>
+    <string name="complaint_sidemenu_bus">통학</string>
+    <string name="complaint_sidemenu_facility">편의(복지)시설</string>
+    <string name="complaint_sidemenu_handicap">장애학생지원센터</string>
+    <string name="complaint_sidemenu_military">병사/예비군/민방위</string>
+    <string name="complaint_sidemenu_interchange">국제교류/유학</string>
+    <string name="complaint_sidemenu_certificate">휴복학/학생증/증명서</string>
+    <string name="complaint_sidemenu_bachelor">학사</string>
+    <string name="complaint_sidemenu_suggestion">건의</string>
+    <string name="complaint_status_stanby">대기</string>
+    <string name="complaint_url">http://www.mju.ac.kr/mbs/mjukr/jsp/complaint/</string>
+    <string name="complaint_url2">http://www.mju.ac.kr/mbs/mjukr/jsp/complaint2/</string>
+
+    <!-- 통합 민원 센터 -->
+    <string name="complaint_write_spinner_prompt">민원분류</string>
+    <string name="complaint_write_title">통합민원센터 글쓰기</string>
+    <string name="complaint_write_article_content_hint">통합민원센터 모바일 버전에서는 첨부파일 기능이 지원되지 않습니다.</string>
+    <string name="complaint_write_article_email_hint">e-mail</string>
+    <string name="complaint_write_article_phone_hint">연락처</string>
+    <string name="complaint_write_article_selection">민원 분류를 선택하세요</string>
+
+    <string-array name="complaint_write_spinner_arr">
+        <item>채플</item>
+        <item>장학/학자금대출</item>
+        <item>통학</item>
+        <item>편의(복지)시설</item>
+        <item>장애학생지원센터</item>
+        <item>병사/예비군/민방위</item>
+        <item>국제교류/유학</item>
+        <item>휴복학/학생증/증명서</item>
+        <item>학사</item>
+        <item>건의</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_chapel">
+        <item>교과목상담</item>
+        <item>선교지원전담</item>
+        <item>채플진행</item>
+        <item>행정</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_loan">
+        <item>교내장학_인문</item>
+        <item>교내장학_자연</item>
+        <item>교외장학_인문</item>
+        <item>교외장학_자연</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_commute">
+        <item>인문</item>
+        <item>자연</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_amenities">
+        <item>시설_인문</item>
+        <item>시설_자연</item>
+        <item>기자재_인문</item>
+        <item>기자재_자연</item>
+        <item>인터넷_인문</item>
+        <item>인터넷_자연</item>
+        <item>홈페이지</item>
+        <item>웹메일</item>
+        <item>보건소_인문</item>
+        <item>보건소_자연</item>
+        <item>주차_자연</item>
+        <item>주차_인문</item>
+        <item>생활관(자연)</item>
+        <item>생활관(인문)</item>
+        <item>동아리_인문</item>
+        <item>동아리_자연</item>
+        <item>학생식당_자연</item>
+        <item>학생식당_인문</item>
+        <item>도서관_자연</item>
+        <item>도서관_인문</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_handicapped">
+        <item>인문</item>
+        <item>자연</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_military">
+        <item>인문</item>
+        <item>자연</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_study_abroad">
+        <item>한국어학당</item>
+        <item>교환학생</item>
+        <item>해외인턴</item>
+        <item>어학연수</item>
+        <item>장학</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_absence">
+        <item>휴학_인문</item>
+        <item>휴학_자연</item>
+        <item>증명서_인문</item>
+        <item>증명서_자연</item>
+        <item>학생증_인문</item>
+        <item>학생증_자연</item>
+        <item>등록금납부확인</item>
+        <item>복학_인문</item>
+        <item>복학_자연</item>
+        <item>재입학_인문</item>
+        <item>재입학_자연</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_bachelor">
+        <item>전과_인문</item>
+        <item>전과_자연</item>
+        <item>복수전공_인문</item>
+        <item>복수전공_자연</item>
+        <item>봉사_인문</item>
+        <item>봉사_자연</item>
+        <item>편입_인문</item>
+        <item>편입_자연</item>
+        <item>계절학기_인문</item>
+        <item>계절학기_자연</item>
+        <item>연계전공_인문</item>
+        <item>연계전공_자연</item>
+        <item>교직_인문</item>
+        <item>교직_자연</item>
+        <item>수강_인문</item>
+        <item>수강_자연</item>
+        <item>수업_인문</item>
+        <item>수업_자연</item>
+        <item>졸업_인문</item>
+        <item>졸업_자연</item>
+        <item>등록금</item>
+        <item>성적_인문</item>
+        <item>성적_자연</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="complaint_write_spinner_sub_arr_suggestion">
+        <item>시설</item>
+        <item>기자재</item>
+        <item>IT</item>
+        <item>통학</item>
+        <item>도서관</item>
+        <item>생활관(인문)</item>
+        <item>생활관(자연)</item>
+        <item>학사</item>
+        <item>경력개발_자연</item>
+        <item>경력개발_인문</item>
+        <item>기타</item>
+    </string-array>
+
+    <!-- community write -->
+    <string name="community_write_title">커뮤니티 글쓰기</string>
+    <string name="community_write_category">카테고리</string>
+    <string name="write_article_title_hint">제목을 입력하세요.</string>
+    <string name="community_write_article_category_introduce">카테고리를 선택하세요.</string>
+    <string name="community_write_article_writer_hint">이름을 입력하세요.</string>
+    <string name="community_write_sub_category">하위 카테고리</string>
+    <string name="community_write_subject">말머리선택</string>
+    <string name="community_write_article_content_hint">커뮤니티 모바일 버전에서는 첨부파일 기능이 지원되지 않습니다.</string>
+    <string name="write_article_save_btn">저장하기</string>
+    <string name="reply_edit_hint">댓글을 적어 주세요</string>
+    <string name="select_pic">사진을 선택하세요</string>
+    <string name="select_pic_only_one">사진은 1개만 선택 가능합니다.</string>
+    <string name="community_album_url">http://www.mju.ac.kr/mbs/mjukr/jsp/album/</string>
+    <string name="community_board_url">http://www.mju.ac.kr/mbs/mjukr/jsp/board/</string>
+    <string name="community_movie_url">http://mju.ac.kr/mbs/mjukr/jsp/movie/</string>
+    <string name="community_no_title">제목정보없음</string>
+    <string name="community_no_writer">작성자정보없음</string>
+    <string name="community_not_show_writer">작성자비공개</string>
+    <string name="community_no_date">날짜정보없음</string>
+    <string name="community_no_result">처리상태정보없음</string>
+    <string name="community_input_data">내용을 입력하세요.</string>
+
+    <!-- community submenu text -->
+    <string name="community_sidemenu_title">커뮤니티</string>
+    <string name="community_sidemenu_square">명지광장</string>
+    <string name="community_sidemenu_our_history">우리들의 이야기</string>
+    <string name="community_sidemenu_praise">칭찬한마디</string>
+    <string name="community_sidemenu_smile">여유와미소</string>
+    <string name="community_sidemenu_study">함께 공부해요</string>
+    <string name="community_sidemenu_stepstone">디딤돌</string>
+    <string name="community_sidemenu_club">동아리</string>
+    <string name="community_sidemenu_advertising">광고합니다</string>
+    <string name="community_sidemenu_gsa">총학생회</string>
+    <string name="community_sidemenu_intellectual">明지식인</string>
+    <string name="community_sidemenu_elbum">앨범게시판</string>
+    <string name="community_sidemenu_ucc">우리들의 영상</string>
+    <string name="community_sidemenu_cut">사각컷 이야기</string>
+    <string name="community_sidemenu_mjulife">명지생활</string>
+    <string name="community_sidemenu_job">아르바이트/취업</string>
+    <string name="community_sidemenu_trip">유학/연수/여행</string>
+    <string name="community_sidemenu_exhibition">전시회/공모전</string>
+    <string name="community_sidemenu_market">오픈마켓</string>
+    <string name="community_sidemenu_loss">분실물센터</string>
+    <string name="community_sidemenu_house">주거정보</string>
+    <string name="community_sidemenu_media">명지미디어</string>
+    <string name="community_sidemenu_news">명지투데이</string>
+    <string name="community_sidemenu_special">명지파워</string>
+    <string name="community_sidemenu_brochure">명지브로셔</string>
+    <string name="community_sidemenu_promotional_video">명지동영상</string>
+    <string name="community_sidemenu_campus_image">명지포토</string>
+
+    <string-array name="community_write_spinner_no_choice">
+        <item>선택할 카테고리가 없습니다.</item>
+    </string-array>
+
+    <!-- 동아리 카테고리 -->
+    <string-array name="community_write_spinner_array_club">
+        <item>선택</item>
+        <item>종교</item>
+        <item>사진</item>
+        <item>음악</item>
+        <item>운동</item>
+        <item>문학</item>
+        <item>여행</item>
+        <item>학업</item>
+        <item>취업</item>
+        <item>봉사</item>
+    </string-array>
+    <string-array name="community_write_sub_spinner_array_club_picture">
+        <item>선택</item>
+        <item>아마추어사진작가들</item>
+        <item>인물사진동아리</item>
+    </string-array>
+    <string-array name="community_write_sub_spinner_array_club_music">
+        <item>선택</item>
+        <item>미디를배워봅시다</item>
+        <item>헤비메탈사랑</item>
+        <item>두드림</item>
+    </string-array>
+    <string-array name="community_write_sub_spinner_array_club_workout">
+        <item>선택</item>
+        <item>산사랑산악회</item>
+        <item>까포에라</item>
+        <item>마사회</item>
+    </string-array>
+    <string-array name="community_write_sub_spinner_array_club_literature">
+        <item>선택</item>
+        <item>허난설헌연구회</item>
+        <item>이문열문학회</item>
+    </string-array>
+    <string-array name="community_write_sub_spinner_array_club_study">
+        <item>선택</item>
+        <item>자바를사랑하는모임</item>
+        <item>취업을위한영어회화모임</item>
+        <item>회계사사랑방</item>
+        <item>로봇동아리 RATS</item>
+    </string-array>
+    <string-array name="community_write_sub_spinner_array_club_job">
+        <item>선택</item>
+        <item>삼성그룹을준비하는사람들</item>
+        <item>9급공무원 함께해요</item>
+    </string-array>
+    <string-array name="community_write_sub_spinner_array_club_service">
+        <item>선택</item>
+        <item>아프리카선교회</item>
+    </string-array>
+
+    <!-- 명지식인 카테고리 -->
+    <string-array name="community_write_spinner_array_knowledge">
+        <item>선택</item>
+        <item>강의</item>
+        <item>학업</item>
+        <item>주거</item>
+        <item>맛집</item>
+        <item>학사</item>
+        <item>기타</item>
+        <item>교통</item>
+    </string-array>
+    <string-array name="community_write_sub_spinner_array_knowledge">
+        <item>선택</item>
+        <item>강의질문</item>
+        <item>학업질문</item>
+        <item>주거질문</item>
+        <item>먹거리질문</item>
+        <item>학사질문</item>
+        <item>기타질문</item>
+    </string-array>
+
+    <!-- 아르바이트/취업 카테고리 -->
+    <string-array name="community_write_spinner_array_job">
+        <item>선택</item>
+        <item>아르바이트</item>
+        <item>인턴</item>
+        <item>계약직</item>
+        <item>정규직</item>
+        <item>시간제</item>
+    </string-array>
+
+    <!-- 오픈마켓 카테고리 -->
+    <string-array name="community_write_spinner_array_market">
+        <item>선택</item>
+        <item>삽니다</item>
+        <item>팝니다</item>
+        <item>그냥드려요</item>
+        <item>교환</item>
+        <item>대여</item>
+    </string-array>
+
+    <!-- 분실물센터 카테고리 -->
+    <string-array name="community_write_spinner_array_loss">
+        <item>선택</item>
+        <item>분실</item>
+        <item>습득</item>
+    </string-array>
+
+    <!-- 분실물센터 카테고리 -->
+    <string-array name="community_write_spinner_array_house">
+        <item>선택</item>
+        <item>자연룸메이트</item>
+        <item>인문룸메이트</item>
+        <item>자연원룸</item>
+        <item>인문원룸</item>
+        <item>자연하숙</item>
+        <item>인문하숙</item>
+        <item>월세</item>
+        <item>전세</item>
+    </string-array>
+
+    <string name="community_write_aritlce_select_pic">사진 선택</string>
+    <string name="community_write_aritlce_no_pic">선택된 파일이 없습니다.</string>
+    <string name="community_write_file_delete_content">사진 목록에서 삭제하시겠습니까?</string>
+
+    <string-array name="green_write_picture_select_list">
+        <item>앨범에서 선택</item>
+        <item>카메라 촬영</item>
+    </string-array>
+
+    <!-- green campus -->
+    <string name="green_title">에너지 절약 나눔터</string>
+    <string name="green_write">에너지 절약 나눔터 글쓰기</string>
+    <string name="green_write_stdNum">학번, 교번</string>
+    <string name="green_write_register">접수 하기</string>
+    <string name="green_write_input_stdNum">학번 또는 교번을 입력하세요</string>
+
+
+    <!-- 그린 캠퍼스 신고 종류 목록 -->
+    <string-array name="green_write_complaint_arr">
+        <item>본인 조치 결과 신고</item>
+        <item>제안합니다</item>
+    </string-array>
+
+    <!-- 학교 소개 -->
+    <string-array name="introduce_sub_menu">
+        <item>총장메세지</item>
+        <item>설립정신</item>
+        <item>심볼</item>
+        <item>상징동물</item>
+        <item>교가</item>
+        <item>응원가</item>
+    </string-array>
+
+    <!-- main -->
+    <string name="main_weather_get_info_fail">날씨 정보를 정상적으로 가져오지 못했습니다.\n다시 시도해 주세요.</string>
+    <string name="main_notice_get_info_fail">공지사항 정보를 정상적으로 가져오지 못했습니다.\n다시 시도해 주세요.</string>
+    <string name="main_banner_get_info_fail">배너 정보를 정상적으로 가져오지 못했습니다.\n다시 시도해 주세요.</string>
+    <string name="main_picure_get_info_fail">사진 정보를 정상적으로 가져오지 못했습니다.\n다시 시도해 주세요.</string>
+    <string name="back_btn_again_to_quit">\'이전\'버튼을 한번 더 누르면 종료 됩니다.</string>
+    <string name="enforce_quit">정상적으로 앱을 실행시키지 못합니다.\n앱을 강제종료합니다.</string>
+    <string name="save_temp_file_fail">사진 파일을 임시 저장하는데 실피했습니다.\n다시 시도해 주세요.</string>
+    <string name="is_first_page">현재 첫 페이지 입니다.</string>
+    <string name="is_last_page">현재 마지막 페이지 입니다.</string>
+
+
+    <!-- main weather -->
+    <string name="main_weather_seoul_title">Seoul</string>
+    <string name="main_weather_seoul_campus">인문캠퍼스</string>
+    <string name="main_weather_yongin_title">YongIn</string>
+    <string name="main_weather_yongin_campus">자연캠퍼스</string>
+    <string name="weather_degree_symbol">˚</string>
+
+    <!--other layout move button -->
+    <string name="category_move_button">전체메뉴 &gt;</string>
+    <string name="category_move_button2">&lt; 전체메뉴 </string>
+    <string name="main_move_button">&lt; 메인화면</string>
+    <string name="developer_move_button">개발자 정보 &gt;</string>
+
+    <!-- quick menu layout -->
+    <string name="quick_menu_myiweb">마이아이웹</string>
+    <string name="quick_menu_library">도서관</string>
+    <string name="quick_menu_phone">전화안내</string>
+    <string name="quick_menu_food">식단안내</string>
+
+    <!-- login -->
+    <string name="login_quick_menu">퀵메뉴</string>
+    <string name="login_id">ID</string>
+    <string name="login_pw">PW</string>
+    <string name="login_quto_login">자동로그인</string>
+    <string name="login_done">로그인 되었습니다.</string>
+    <string name="logout_done">로그아웃 되었습니다.</string>
+
+    <!-- food -->
+    <string name="food_title">식단</string>
+    <string name="food_breakfast">아침</string>
+    <string name="food_lunch">점심</string>
+    <string name="food_dinner">저녁</string>
+    <string name="food_korean">자율한식(중식)</string>
+    <string name="food_western">자율한식(석식)</string>
+    <string name="food_special">가스야</string>
+    <string name="food_ramen">라면고정메뉴</string>
+    <string name="food_bunsik">분식</string>
+    <string name="food_100ban">참미소</string>
+    <string name="food_chinese">덮고볶고</string>
+    <string name="food_student_cefeteria">학생식당</string>
+    <string name="food_staff_cefeteria">교직원식당</string>
+    <string name="food_library_cefeteria">명진당</string>
+    <string name="no_food_info">동록된 식단이 없습니다.</string>
+
+    <!-- banner -->
+    <string name="main_banner_hit_title">hits</string>
+    <string name="main_banner_in_board_title">명지 투데이</string>
+
+
+    <!-- campus map -->
+    <string name="humanity">인문</string>
+    <string name="science">자연</string>
+
+    <!-- traffic -->
+    <string name="schoolbus">명지셔틀버스</string>
+    <string name="urbanbusbus">일반시내버스</string>
+    <string name="subway">지하철</string>
+    <string name="schoolbus_to_school">통학버스(등교)</string>
+    <string name="schoolbus_to_home">통학버스(하교)</string>
+    <string name="schoolbus_semester_weekday">셔틀버스(학기중:평일)</string>
+    <string name="schoolbus_semester_weekend">셔틀버스(학기중:공휴일)</string>
+    <string name="schoolbus_vacation">셔틀버스(방학중)</string>
+    <string name="humanity_and_science_to_school">인문/자연간셔틀버스(등교)</string>
+    <string name="humanity_and_science_to_home">인문/자연간셔틀버스(하교)</string>
+
+    <!-- 학교소개 -->
+    <string name="president_message">총장메세지</string>
+    <string name="foundation_spirit">설립정신</string>
+    <string name="symbol">심볼</string>
+    <string name="symbol_animal">상징동물</string>
+    <string name="school_song">교가</string>
+    <string name="cheering_song">응원가</string>
+
+    <!-- picture -->
+    <string name="picture_to_main">메인으로\n이동</string>
+    <string name="picture_to_main_landscape">메인으로 이동</string>
+    <string name="picture_to_board">게시판\n보기</string>
+    <string name="picture_to_board_landscape">게시판 보기</string>
+    <string name="picture_to_all_picture">전체보기</string>
+    <string name="picture_grid_goback">이전으로\n이동하기</string>
+    <string name="picture_folder_name">tmp_pictures/</string>
+    <string name="picture_file_name">bitmap</string>
+    <string name="picture_file_extension">.jpg</string>
+
+    <!-- typeface path -->
+    <string name="sdgtl_ttf">SDGTL.TTF</string>
+    <string name="helvetica_neueltstd_th_otf">HelveticaNeueLTStd-Th.otf</string>
+    <string name="helvetica_neueltstd_ultlt_otf">HelveticaNeueLTStd-UltLt.otf</string>
+
+    <!-- 공지 다이얼로그 \n화면을 왼쪽으로 슬라이드 하면 전체 메뉴와 애플리케이션 정보를 볼 수 있습니다. -->
+    <string name="main_notice_dialog_str">명지대학교 애플리케이션이 새로운 버전으로 업데이트 되었습니다.</string>
+    <string name="photo_notice_dialog_str">기기를 가로로 눕히면 전체 사진을 볼 수 있습니다.</string>
+
+    <string name="do_not_show_again">다시보지 않기</string>
+</resources>

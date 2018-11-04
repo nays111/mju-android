@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/developer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/main_third_layout_bgcolor" >
+
+    <TextView
+        android:id="@+id/third_layout_to_main_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:paddingTop="10dip"
+		android:paddingLeft="10dip"
+        android:text="@string/category_move_button2"
+        android:textColor="@color/selector_textcolor"
+		android:textSize="@dimen/main_header_allmenu_text_size" />
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_version"
+        android:textColor="#000000"
+        android:textSize="@dimen/app_version_text_size" />
+
+    <TextView
+        android:id="@+id/developer_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_info_title"
+        android:textColor="#000000"
+        android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+    <TextView
+        android:id="@+id/developer_info_department1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_info_department1"
+        android:textColor="#000000"
+        android:textSize="@dimen/weather_seoul_contents_title_size" />
+
+    <TextView
+        android:id="@+id/developer_info_department2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_info_department2"
+        android:textColor="#000000"
+        android:textSize="@dimen/weather_seoul_contents_title_size" />
+
+    <TextView
+        android:id="@+id/developer_info_hello1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_info_hello1"
+        android:textColor="#000000"
+        android:textSize="@dimen/weather_seoul_contents_title_size" />
+
+    <TextView
+        android:id="@+id/developer_info_hello2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_info_hello2"
+        android:textColor="#000000"
+        android:textSize="@dimen/weather_seoul_contents_title_size" />
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback"
+        android:textColor="#000000"
+        android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+    <ImageButton
+        android:id="@+id/feedback_email_btn"
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@drawable/btn_feedback_email_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/developer_info_hello3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developer_info_hello3"
+        android:textColor="#000000"
+        android:textSize="@dimen/weather_seoul_contents_title_size" />
+
+</LinearLayout>

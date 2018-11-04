@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/picture_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/picture_image_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_picture_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dip"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/photo_title_text_size" />
+
+    <ImageButton
+        android:id="@+id/btn_picture_upload"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_camera_upload_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_picture_to_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_picture_upload"
+        android:background="@drawable/btn_picture_selector"
+        android:gravity="right"
+        android:lineSpacingExtra="5dip"
+        android:padding="5dip"
+        android:text="@string/picture_to_main"
+        android:textColor="@color/picture_textview_color"
+        android:textSize="@dimen/photo_menu_title_size" />
+
+    <ImageButton
+        android:id="@+id/btn_previous_picture"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_picture_upload"
+        android:background="@drawable/btn_picture_selector"
+        android:contentDescription="@string/img_desc"
+        android:padding="5dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_previous_picture" />
+
+    <ImageButton
+        android:id="@+id/btn_next_picture"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_alignBottom="@id/btn_previous_picture"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_picture_selector"
+        android:contentDescription="@string/img_desc"
+        android:padding="5dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_next_picture" />
+
+    <TextView
+        android:id="@+id/tv_picture_to_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_picture_to_main"
+        android:layout_below="@id/tv_picture_to_main"
+        android:background="@drawable/btn_picture_selector"
+        android:gravity="right"
+        android:lineSpacingExtra="5dip"
+        android:padding="5dip"
+        android:text="@string/picture_to_board"
+        android:textColor="@color/picture_textview_color"
+        android:textSize="@dimen/photo_menu_title_size" />
+
+    <TextView
+        android:id="@+id/tv_picture_to_all_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_picture_to_main"
+        android:layout_below="@id/tv_picture_to_board"
+        android:background="@drawable/btn_picture_selector"
+        android:padding="5dip"
+        android:text="@string/picture_to_all_picture"
+        android:textColor="@color/picture_textview_color"
+        android:textSize="@dimen/photo_menu_title_size" />
+
+    <LinearLayout
+        android:id="@+id/picture_indicator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="4dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_picture_indicator"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

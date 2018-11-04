@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dip"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+
+    <LinearLayout
+        android:id="@+id/food_6_menu_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/food_korean_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_korean"
+            android:textColor="@color/food_menu_color"
+            android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/food_menu_color" />
+
+        <TextView
+            android:id="@+id/tv_food_korean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="7dip"
+            android:textColor="@color/food_menu_item_color"
+            android:textSize="@dimen/food_title" />
+
+        <TextView
+            android:id="@+id/food_western_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_western"
+            android:textColor="@color/food_menu_color"
+            android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/food_menu_color" />
+
+        <TextView
+            android:id="@+id/tv_food_western"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="7dip"
+            android:textColor="@color/food_menu_item_color"
+            android:textSize="@dimen/food_title" />
+
+        <TextView
+            android:id="@+id/food_special_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_special"
+            android:textColor="@color/food_menu_color"
+            android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/food_menu_color" />
+
+        <TextView
+            android:id="@+id/tv_food_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="7dip"
+            android:textColor="@color/food_menu_item_color"
+            android:textSize="@dimen/food_title" />
+
+        <TextView
+            android:id="@+id/food_ramen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_ramen"
+            android:textColor="@color/food_menu_color"
+            android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/food_menu_color" />
+
+        <TextView
+            android:id="@+id/tv_food_ramen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="7dip"
+            android:textColor="@color/food_menu_item_color"
+            android:textSize="@dimen/food_title" />
+
+        <TextView
+            android:id="@+id/food_bunsik_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_bunsik"
+            android:textColor="@color/food_menu_color"
+            android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/food_menu_color" />
+
+        <TextView
+            android:id="@+id/tv_food_bunsik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="7dip"
+            android:textColor="@color/food_menu_item_color"
+            android:textSize="@dimen/food_title" />
+
+        <TextView
+            android:id="@+id/food_100ban_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_100ban"
+            android:textColor="@color/food_menu_color"
+            android:textSize="@dimen/main_notice_navi_text_size_not_selected" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/food_menu_color" />
+
+        <TextView
+            android:id="@+id/tv_food_100ban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="7dip"
+            android:textColor="@color/food_menu_item_color"
+            android:textSize="@dimen/food_title" />
+    </LinearLayout>
+
+</ScrollView>

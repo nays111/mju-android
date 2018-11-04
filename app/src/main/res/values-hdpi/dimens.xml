@@ -1,0 +1,59 @@
+<resources>
+    <!-- hdpi text size -->
+    <!-- Galaxy S2, -->
+    
+    <!--  header menu text size -->
+    <dimen name="main_header_allmenu_text_size">12sp</dimen>
+    
+    <!-- main login text size -->
+    <dimen name="main_login_text_size">9sp</dimen>
+    <dimen name="main_login_auto_login_text_size">10sp</dimen>
+    
+    <!-- main myiweb text size -->
+    <dimen name="main_myiweb_text_size">9sp</dimen>
+    
+    <!-- weather title size -->
+    <dimen name="day_text_size">9sp</dimen>
+    <dimen name="date_text_size">8sp</dimen>
+    <dimen name="weather_seoul_title_size">17sp</dimen>
+    <dimen name="weather_seoul_campus_text_size">7sp</dimen>
+    <dimen name="weather_seoul_contents_title_size">11sp</dimen>
+    <dimen name="weather_seoul_degree_title_size">20sp</dimen> 
+
+    <!-- main notice text size -->
+    <dimen name="main_notice_navi_text_size_selected">15sp</dimen>
+    <dimen name="main_notice_navi_text_size_not_selected">14sp</dimen>
+	<dimen name="main_notice_text_size">11sp</dimen>
+	
+    <!-- picture text size -->
+    <dimen name="main_picture_title_size">12sp</dimen>
+    <dimen name="main_picture_date_size">10sp</dimen>
+    
+    <!-- main second layout text size-->
+    <dimen name="sub_title_text_size">20sp</dimen>
+    
+    <!-- main third layout text size-->
+    <dimen name="app_version_text_size">60sp</dimen>
+    
+     <!-- side menu text size -->
+    <dimen name="side_menu_title">25sp</dimen>
+    <dimen name="side_menu_sub_title_text_size">20sp</dimen>
+    <dimen name="side_menu_text_size">15sp</dimen>
+    
+    <!-- food text size -->
+    <dimen name="food_contents_title">23sp</dimen>
+    <dimen name="food_date_title">13sp</dimen>
+    <dimen name="food_campus_title_size">21sp</dimen>
+    <dimen name="food_title">13sp</dimen>
+    
+    <!-- photo text size -->
+    <dimen name="photo_title_text_size">21sp</dimen>
+    <dimen name="photo_menu_title_size">17sp</dimen>
+    <dimen name="photo_go_back_text_size">20sp</dimen>
+     
+    <!-- main banner, picture viewpager size -->
+	<dimen name="viewpager_width">304.66dp</dimen>
+	<dimen name="viewpager_height">124.66dp</dimen>
+	
+	<dimen name="width">320.0dp</dimen>
+</resources>

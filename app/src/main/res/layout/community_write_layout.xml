@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_header_color"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/community_write_header_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/icon_header_community"
+            android:contentDescription="@string/img_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/community_write_header_icon"
+            android:gravity="center"
+            android:text="@string/community_write_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <EditText
+                android:id="@+id/community_write_subject_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_article_title_hint"
+                android:maxLength="20"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/community_write_writer_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/community_write_article_writer_hint"
+                android:maxLength="20"
+                android:inputType=""
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/community_writer_category_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="@string/community_write_article_category_introduce"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/community_write_community_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/community_write_category" />
+
+            <Spinner
+                android:id="@+id/community_write_community_spinner_sub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/community_write_sub_category" />
+
+            <EditText
+                android:id="@+id/community_write_content_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:hint="@string/community_write_article_content_hint"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:maxLength="300"
+                android:maxLines="10"
+                android:minLines="10"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/community_write_submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_upload"
+                android:drawablePadding="2dip"
+                android:text="@string/write_article_save_btn" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

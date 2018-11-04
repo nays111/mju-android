@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/btn_myiweb_to_quickmenu"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:background="@drawable/btn_quickmenu_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/myiweb_quick_menu_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_myiweb_to_quickmenu"
+        android:text="@string/login_quick_menu"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/main_login_text_size" />
+
+    <ImageButton
+        android:id="@+id/btn_myiweb_timetable"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_toRightOf="@id/btn_myiweb_to_quickmenu"
+        android:background="@drawable/btn_main_timetable_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/btn_myiweb_grade"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_alignTop="@id/btn_myiweb_timetable"
+        android:layout_toRightOf="@id/btn_myiweb_timetable"
+        android:background="@drawable/btn_main_grade_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/btn_myiweb_graduate"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_alignTop="@id/btn_myiweb_timetable"
+        android:layout_toRightOf="@id/btn_myiweb_grade"
+        android:background="@drawable/btn_main_graduate_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/temp_logout_btn"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_toRightOf="@id/btn_myiweb_graduate"
+        android:background="@drawable/btn_logout_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

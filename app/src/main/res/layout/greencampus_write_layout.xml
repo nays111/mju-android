@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_header_color"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/greencampus_write_header_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/icon_header_greencampus"
+            android:contentDescription="@string/img_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/greencampus_write_header_icon"
+            android:gravity="center"
+            android:text="@string/green_write"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/main_notice_navi_text_size_selected"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="3dip"
+            android:paddingTop="10dip" >
+
+            <EditText
+                android:id="@+id/green_write_subject_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_article_title_hint"
+                android:maxLength="20"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/green_write_writer_id_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/green_write_stdNum"
+                    android:maxLength="10"
+                    android:nextFocusDown="@+id/green_write_phone_edittext"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@id/green_write_phone_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/complaint_write_article_phone_hint"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="@string/complaint_write_article_selection"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/green_write_complaint_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/green_write_complaint_prompt" />
+
+            <EditText
+                android:id="@+id/green_write_content_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:hint="@string/green_write_content_hint"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:maxLength="200"
+                android:maxLines="10"
+                android:minLines="10"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/green_write_file_choose_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_image_selection"
+                    android:drawablePadding="2dip"
+                    android:text="@string/community_write_aritlce_select_pic" />
+
+                <Button
+                    android:id="@+id/green_write_submit_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_upload"
+                    android:drawablePadding="2dip"
+                    android:text="@string/green_write_register" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/green_write_filelist_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/green_write_file_state_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:text="@string/community_write_aritlce_no_pic"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/green_write_selected_img_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dip"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_margin="10dip"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:contentDescription="@string/img_desc" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

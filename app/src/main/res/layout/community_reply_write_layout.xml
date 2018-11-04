@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/community_write_reply_edittext"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/bg_reply_edittext"
+        android:hint="@string/reply_edit_hint"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/community_write_reply_btn" 
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="30dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/btn_reply_write_selector"
+        android:contentDescription="@string/img_desc" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "23.0.0"
+
+    defaultConfig {
+        applicationId "kr.ac.mju.mjuapp"
+        minSdkVersion 11
+        targetSdkVersion 19
+    }
+
+    signingConfigs {
+        Mykeystrore {
+            keyAlias 'mjuapp'
+            keyPassword 'jeus1541'
+            storeFile file('C:/ucient/mjuapp.keystore')
+            storePassword 'jeus1541'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.Mykeystrore
+            debuggable false
+        }
+
+        debug {
+            signingConfig signingConfigs.Mykeystrore
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:19.1.0'
+    compile files('libs/httpmime-4.1.3.jar')
+    compile files('libs/jericho-html-3.2.jar')
+    compile files('libs/libDaumMapAndroid.jar')
+}

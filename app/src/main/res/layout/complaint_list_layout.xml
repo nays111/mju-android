@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/complaint_sub_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="90dip"
+        android:background="#2C323F"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:padding="10dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/complaint_sidemenu_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/complaint_sidemenu_title"
+                android:textSize="@dimen/side_menu_title" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_chapel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_chapel"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_loan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_scholarship"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_commute"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_bus"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_amenities"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_facility"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_handicapped"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_handicap"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_military"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_military"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_study_abroad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_interchange"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_absence"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_certificate"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_bachelor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_bachelor"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/complaint_subtitle_suggestion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/complaint_sidemenu_suggestion"
+                android:textSize="@dimen/side_menu_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/complaint_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/bg_header_color"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/complaint_list_sliding_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_sliding" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/complaint_list_header_icon"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_header_complaint"
+                    android:contentDescription="@string/img_desc" />
+
+                <TextView
+                    android:id="@+id/complaint_maintitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/complaint_list_header_icon"
+                    android:background="@color/bg_header_color"
+                    android:gravity="center"
+                    android:text="@string/menu_qna"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_notice_navi_text_size_selected"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/complaint_list_search_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/complaint_list_write_btn"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_search" />
+
+            <ImageButton
+                android:id="@id/complaint_list_write_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_write" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/black"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/complaint_list_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_gravity="top"
+                    android:layout_marginRight="2dip"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@android:color/transparent"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="3dip"
+                    android:scrollbarStyle="outsideInset"
+                    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+
+                <TextView
+                    android:id="@+id/complaint_list_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/list_more_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/text_list_load_more_btn"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/complaint_list_left_slidingbar"
+                android:layout_width="90dip"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

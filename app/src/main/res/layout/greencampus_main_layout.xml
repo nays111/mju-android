@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_mjulogo"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/green_write_header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/bg_header_color"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/green_main_header_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/icon_header_greencampus"
+                android:contentDescription="@string/img_desc" />
+
+            <TextView
+                android:id="@+id/green_main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/green_main_header_icon"
+                android:gravity="center"
+                android:text="@string/green_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/main_notice_navi_text_size_selected"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/green_list_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_base_selector"
+            android:contentDescription="@string/img_desc"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_sliding" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/green_write_bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_green_write_self"
+                android:layout_width="132.66dp"
+                android:layout_height="213.06dp"
+                android:layout_marginRight="7.37dp"
+                android:background="@drawable/green_write_self_btn_selector" />
+
+            <Button
+                android:id="@+id/btn_green_write_suggest"
+                android:layout_width="132.66dp"
+                android:layout_height="213.06dp"
+                android:background="@drawable/green_write_suggest_btn_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

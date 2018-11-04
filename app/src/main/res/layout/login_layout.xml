@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical" >
+
+    <!-- header bar -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/bg_header_color"
+        android:gravity="center"
+        android:text="@string/text_login"
+        android:textColor="@android:color/white"
+        android:textSize="20dip" />
+
+    <!-- login content layout -->
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/login_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:hint="@string/text_id"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/login_passwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:hint="@string/text_passwd"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/login_login_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dip"
+                android:layout_weight="2"
+                android:contentDescription="@string/img_desc"
+                android:background="@drawable/login_login_btn_selector" />
+        </LinearLayout> <!-- edittext layout -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <CheckBox
+                    android:id="@+id/login_chk_autologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/login_textview_autologin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/text_autologin"
+                    android:textSize="17dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <CheckBox
+                    android:id="@+id/login_chk_save_user_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/login_textview_save_user_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/text_save_user_id"
+                    android:textSize="17dip" />
+            </LinearLayout>
+        </LinearLayout> <!-- checkbox layout -->
+    </LinearLayout>
+
+    <!-- LoginLayout -->
+    <!-- debug -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/login_debug"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+    </ScrollView>
+
+</LinearLayout>

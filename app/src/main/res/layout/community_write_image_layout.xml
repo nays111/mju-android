@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_header_color"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/community_write_header_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/icon_header_community"
+            android:contentDescription="@string/img_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/community_write_header_icon"
+            android:gravity="center"
+            android:text="@string/community_write_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <EditText
+                android:id="@+id/community_img_write_subject_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_article_title_hint"
+                android:maxLength="20"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/community_img_write_writer_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType=""
+                android:maxLength="20"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/community_img_write_file_choose_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_image_selection"
+                android:drawablePadding="2dip"
+                android:text="@string/community_write_aritlce_select_pic" />
+
+            <LinearLayout
+                android:id="@+id/community_img_write_filelist_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/community_img_write_file_state_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:text="@string/community_write_aritlce_no_pic"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/community_img_write_selected_imgview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dip"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_margin="10dip"
+                    android:contentDescription="@string/img_desc"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/community_img_write_submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_upload"
+                android:drawablePadding="2dip"
+                android:text="@string/write_article_save_btn" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

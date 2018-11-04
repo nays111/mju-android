@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/community_sub_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="90dip"
+        android:background="#2C323F"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:padding="10dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/community_sidemenu_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/community_sidemenu_title"
+                android:textSize="@dimen/side_menu_title" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <!-- 명지광장 -->
+
+            <TextView
+                android:id="@+id/community_sidemenu_square_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/community_sidemenu_square"
+                android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_our_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_our_history"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_praise"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_praise"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_study"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_study"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_stepstone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_stepstone"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_club"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_club"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_advertising"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_advertising"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_gsa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_gsa"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <!-- 명지식인 -->
+
+            <TextView
+                android:id="@+id/community_sidemenu_intellectual_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/community_sidemenu_intellectual"
+                android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_intellectual"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_intellectual"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <!-- 앨범게시판 -->
+
+            <TextView
+                android:id="@+id/community_sidemenu_elbum_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/community_sidemenu_elbum"
+                android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_ucc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_ucc"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_cut"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_cut"
+                android:textSize="@dimen/side_menu_text_size" />
+            <!-- 명지생활 -->
+
+            <TextView
+                android:id="@+id/community_sidemenu_mjulife_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/community_sidemenu_mjulife"
+                android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_job"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_job"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_trip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_trip"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_exhibition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_exhibition"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_market"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_market"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_loss"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_loss"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_house"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_house"
+                android:textSize="@dimen/side_menu_text_size" />
+            <!-- 미디어 -->
+
+            <TextView
+                android:id="@+id/community_sidemenu_media_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/community_sidemenu_media"
+                android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_news"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_news"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_special"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_special"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <!--
+            <TextView
+                android:id="@+id/community_sidemenu_brochure"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_brochure"
+                android:textSize="20sp" />
+            -->
+
+            <TextView
+                android:id="@+id/community_sidemenu_promotional_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_promotional_video"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/community_sidemenu_campus_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/community_sidemenu_campus_image"
+                android:textSize="@dimen/side_menu_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- end of submenu -->
+
+    <LinearLayout
+        android:id="@+id/community_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/bg_header_color" >
+
+            <ImageButton
+                android:id="@+id/community_sliding_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_sliding" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/community_header_icon"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_header_community"
+                    android:contentDescription="@string/img_desc" />
+
+                <TextView
+                    android:id="@+id/community_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/community_header_icon"
+                    android:gravity="center"
+                    android:text="@string/community_sidemenu_title"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_notice_navi_text_size_selected" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/community_list_search_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/community_list_write_btn"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_search" />
+
+            <ImageButton
+                android:id="@id/community_list_write_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_write" />
+        </RelativeLayout>
+
+        <!-- end of title -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/black"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/community_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_gravity="top"
+                    android:layout_marginRight="2dip"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@android:color/transparent"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="3dip"
+                    android:scrollbarStyle="outsideInset"
+                    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" >
+                </ListView>
+
+                <TextView
+                    android:id="@+id/community_list_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/list_more_selector"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/text_list_load_more_btn"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/community_left_slidingbar"
+                android:layout_width="90dip"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

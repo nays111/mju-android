@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/food_sub_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="90dip"
+        android:background="#2C323F"
+        android:fadingEdge="none"
+        android:padding="10dip"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/menu_food_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/menu_food"
+                android:textSize="@dimen/side_menu_title" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/food_seoul_campus_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/main_weather_seoul_campus"
+                android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/food_humanity_student_cafeteria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/food_student_cefeteria"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/food_humanity_staff_cafeteria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/food_staff_cefeteria"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/food_yongin_campus_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/main_weather_yongin_campus"
+                android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/dark_gray_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/food_science_student_cefeteria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/food_student_cefeteria"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/food_science_library_cefeteria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/food_library_cefeteria"
+                android:textSize="@dimen/side_menu_text_size" />
+
+            <TextView
+                android:id="@+id/food_science_staff_cefeteria"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sliding_menu_selector"
+                android:gravity="center_vertical|left"
+                android:padding="3dp"
+                android:text="@string/food_staff_cefeteria"
+                android:textSize="@dimen/side_menu_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/food_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/bg_header_color" >
+
+            <ImageButton
+                android:id="@+id/food_sliding_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_sliding" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/food_header_icon"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_header_food"
+                    android:contentDescription="@string/img_desc" />
+
+                <TextView
+                    android:id="@+id/food_main_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/food_header_icon"
+                    android:gravity="center"
+                    android:text="@string/menu_food"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_notice_navi_text_size_selected" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@color/food_bg_color" >
+
+            <TextView
+                android:id="@+id/food_campus_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/food_title_color"
+                android:textSize="@dimen/food_campus_title_size" />
+
+            <TextView
+                android:id="@+id/food_cafeteria_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/food_campus_title"
+                android:layout_below="@id/food_campus_title"
+                android:textColor="#667e80"
+                android:textSize="@dimen/weather_seoul_title_size" />
+
+            <TextView
+                android:id="@+id/food_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/food_cafeteria_title"
+                android:layout_alignParentRight="true"
+                android:textColor="#667e80"
+                android:textSize="@dimen/food_date_title" />
+
+            <LinearLayout
+                android:id="@+id/food_navigator_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food_cafeteria_title"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/food_menu_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/food_navigator_layout"
+                android:layout_marginBottom="25dip" />
+
+            <LinearLayout
+                android:id="@+id/food_viewpager_marker_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dip"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <View
+                android:id="@+id/food_left_slidingbar"
+                android:layout_width="90dip"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

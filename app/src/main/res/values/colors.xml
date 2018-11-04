@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="main_first_header_layout_bgcolor">#ffffff</color>
+	<color name="main_first_weather_layout_bgcolor">#94b5c5</color>
+	<color name="main_first_login_layout_bgcolor">#96C7E0</color>
+	<color name="main_first_header_layout_textview_color">#939598</color>
+	<!-- 조성환이 는것. -->
+	<color name="main_first_header_layout_textview_color2">#000000</color>
+
+	<color name="main_second_layout_bgcolor">#ffffff</color>
+	<color name="main_second_layout_title_color">#808285</color>
+	<!-- 조성환이 추가한것. -->
+	<color name="main_second_layout_title_color2">#000000</color>
+	<color name="main_second_layout_menu_divider_color">#c68b8b</color>
+
+	<color name="main_third_layout_bgcolor">#ffffff</color>
+	<color name="main_third_layout_line_color">#d0d0d0</color>
+
+	<color name="notice_item_devider">#C68B8B</color>
+	<!-- 이동 텍스트 컬러. -->
+	<color name="move_color">#000000</color>
+	<!--  박재인 넣은거  -->
+	<color name="pressed_gray">#EEEEEE</color>
+
+
+	<color name="first_layout_edge_color">#aaaba6</color>
+	<color name="second_layout_edge_color">#cecabf</color>
+
+	<color name="dark_gray_color">#8B8B8B</color>
+	<color name="bg_header_color">#161e42</color>
+	<color name="btn_pressed_true">#505671</color>
+	<color name="gray_color">#DDDDDD</color>
+	<color name="btn_pressed_false">#73788d</color>
+
+	<color name="auto_login_textview">#7da8b2</color>
+	<color name="auto_login_textview_checked">#56757a</color>
+
+	<color name="notice_navi_showed_tv_color">#808285</color>
+	<!-- 조성환이 쓴것. -->
+	<color name="notice_navi_showed_tv_color2">#000000</color>
+	<color name="notice_navi_not_showed_tv_color">#808285</color>
+	<!-- 조성환이 쓴것. -->
+	<color name="notice_navi_not_showed_tv_color2">#000000</color>
+	<color name="notice_contents_tv_color">#808285</color>
+	<!-- 조성환이 쓴것. -->
+	<color name="notice_contents_tv_color2">#000000</color>
+
+	<color name="textview_selected_color">#b3dcdcdc</color>
+	<color name="imageview_selected_color">#9983c0d8</color>
+
+	<color name="main_notice_textview_selected_color">#66EDE3DA</color>
+	<color name="nothing_color">#00FFFFFF</color>
+
+	<color name="food_bg_color">#ededed</color>
+	<color name="food_title_color">#b7c9cb</color>
+	<color name="food_menu_color">#796580</color>
+	<color name="food_menu_item_color">#97967a</color>
+
+	<color name="picture_textview_color">#8fc9c9</color>
+	<color name="picture_grid_textview_color">#1da7fc</color>
+	<color name="picture_grid_bg_color">#e8e8e8</color>
+	<color name="picture_next_btn_seletor">#cce8f6</color>
+
+	<color name="main_second_textview_selected_color">#b3EDE3DA</color>
+	<color name="timetable_bg_color">#e5e5e5</color>
+</resources>

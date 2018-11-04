@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/campusmap_sub_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="90dip"
+        android:background="#2C323F"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/campusmap_submenu_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="@string/menu_campusmap"
+            android:textSize="@dimen/side_menu_title" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@color/dark_gray_color"
+            android:gravity="center_vertical" />
+
+        <!-- 인문 -->
+
+        <TextView
+            android:id="@+id/campusmap_seoul_campus_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="@string/main_weather_seoul_campus"
+            android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/dark_gray_color"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/campusmap_humainty_campus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sliding_menu_selector"
+            android:gravity="center_vertical|left"
+            android:padding="3dp"
+            android:text="@string/main_weather_seoul_campus"
+            android:textSize="@dimen/side_menu_text_size" />
+
+        <!--
+        2014.01.21 주석처리
+        <ListView
+            android:id="@+id/campusmap_liberalarts_building_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:fadingEdge="none"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+        </ListView>
+        -->
+
+        <!-- 자연 -->
+
+        <TextView
+            android:id="@+id/campusmap_yongin_campus_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="@string/main_weather_yongin_campus"
+            android:textSize="@dimen/side_menu_sub_title_text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/dark_gray_color"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/campusmap_science_campus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sliding_menu_selector"
+            android:gravity="center_vertical|left"
+            android:padding="3dp"
+            android:text="@string/main_weather_yongin_campus"
+            android:textSize="@dimen/side_menu_text_size" />
+        
+        <!--
+        2014.01.21 주석처리
+        <ListView
+            android:id="@+id/campusmap_natural_building_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:fadingEdge="none"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb_dark" >
+        </ListView>
+        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/campusmap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/bg_header_color" >
+
+            <ImageButton
+                android:id="@+id/campusmap_sliding_btn"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_base_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_sliding" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/campusmap_header_icon"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_header_campusmap"
+                    android:contentDescription="@string/img_desc" />
+
+                <TextView
+                    android:id="@+id/campusmap_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/campusmap_header_icon"
+                    android:gravity="center"
+                    android:text="@string/menu_campusmap"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/main_notice_navi_text_size_selected" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <net.daum.mf.map.api.MapView
+                android:id="@+id/campusmap_mapview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:clickable="false" />
+
+            <ImageButton
+                android:id="@+id/campusmap_btn_current_location"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="20dip"
+                android:background="@drawable/btn_campusmap_sub_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_current_location" />
+
+            <ImageButton
+                android:id="@+id/campusmap_btn_maptype"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="20dip"
+                android:background="@drawable/btn_campusmap_sub_selector"
+                android:contentDescription="@string/img_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_map_type" />
+
+            <View
+                android:id="@+id/campusmap_left_slidingbar"
+                android:layout_width="90dip"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

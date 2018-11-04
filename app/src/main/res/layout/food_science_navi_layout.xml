@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/btn_food_science_student_cafeteria"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:background="@drawable/btn_food_studunt_cafeteria_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/btn_food_science_library_cafeteria"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:background="@drawable/btn_food_library_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/btn_food_science_staff_cafeteria"
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:background="@drawable/btn_food_staff_cafeteria_selector"
+        android:contentDescription="@string/img_desc"
+        android:scaleType="fitXY" />
+
+</LinearLayout>
