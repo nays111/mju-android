@@ -4,9 +4,12 @@
     android:versionCode="25"
     android:versionName="2.57" >
 
+
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="19" />
+
+        android:targetSdkVersion="28" />
+
+
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -17,6 +20,8 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <uses-feature android:name="android.hardware.camera" />
+
+
 
     <supports-screens
         android:anyDensity="true"
@@ -241,6 +246,9 @@
         <provider
             android:name="kr.ac.mju.mjuapp.campusmap.CampusmapContentProvider"
             android:authorities="kr.ac.mju.mjuapp.campusmap" />
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
     </application>
 
 </manifest>

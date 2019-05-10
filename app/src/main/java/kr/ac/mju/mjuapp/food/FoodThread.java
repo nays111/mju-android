@@ -141,8 +141,12 @@ public class FoodThread extends Thread {
 			str = str.replace("&lt;", "<");
 		}
 
-		if (str.contains("&gt;")) {
-			str = str.replace("&gt;", ">");
+		if (str.contains("&lt;")) {
+			str = str.replace("&lt;", "<");
+		}
+		//19.05.01 불필요한 html태그가 어플에 계속 등장해 제거했음
+		if (str.contains("<br>")) {
+			str = str.replace("<br>", " ");
 		}
 
 		if (str.contains("<p>")) {
