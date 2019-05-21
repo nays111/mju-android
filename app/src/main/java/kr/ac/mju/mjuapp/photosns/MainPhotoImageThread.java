@@ -46,7 +46,9 @@ public class MainPhotoImageThread extends Thread {
 		for (int index = 0; index < MJUConstants.MAIN_PICTURE_IMAGE_URLS.length; index++) {
 			try {
 				imageUrl = new URL(MJUConstants.MAIN_PICTURE_IMAGE_URLS[index]);
-				bis = executeConnect(imageUrl);
+				bis = new BufferedInputStream( executeConnect(imageUrl));
+				bis.mark(bis.available());
+				bis.reset();
 				opt.inPreferredConfig = Config.RGB_565;
 				tempBitmap = BitmapFactory.decodeStream(bis, null, opt);
 				finalBitmap = Bitmap.createScaledBitmap(tempBitmap,
